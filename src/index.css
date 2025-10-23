@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Anime-inspired vibrant gradients and colors */
+    --background: 250 50% 8%;
+    --foreground: 330 100% 98%;
+
+    --card: 250 40% 12%;
+    --card-foreground: 330 100% 98%;
+
+    --popover: 250 45% 10%;
+    --popover-foreground: 330 100% 98%;
+
+    /* Electric purple primary */
+    --primary: 270 100% 65%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 280 100% 75%;
+
+    /* Sakura pink secondary */
+    --secondary: 330 100% 70%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Cyber cyan muted */
+    --muted: 190 80% 40%;
+    --muted-foreground: 190 30% 85%;
+
+    /* Neon accent */
+    --accent: 160 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 250 30% 25%;
+    --input: 250 30% 20%;
+    --ring: 270 100% 65%;
+
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 250 50% 8%;
+    --foreground: 330 100% 98%;
+    --card: 250 40% 12%;
+    --card-foreground: 330 100% 98%;
+    --popover: 250 45% 10%;
+    --popover-foreground: 330 100% 98%;
+    --primary: 270 100% 65%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 280 100% 75%;
+    --secondary: 330 100% 70%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 190 80% 40%;
+    --muted-foreground: 190 30% 85%;
+    --accent: 160 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 250 30% 25%;
+    --input: 250 30% 20%;
+    --ring: 270 100% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
